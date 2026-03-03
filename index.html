@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample SA-2 Question Paper | Class 7 History & Civics (ICSE)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+    :root {
+      --primary: #2c3e50;
+      --accent: #c0392b;
+      --gold: #d4af37;
+      --light: #f8f9fa;
+      --dark: #1a2634;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      color: var(--primary);
+      line-height: 1.65;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+      color: white;
+      padding: 50px 35px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%; right: -50%; bottom: -50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+      animation: pulse 12s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(1); opacity: 0.4; }
+      50%     { transform: scale(1.3); opacity: 0.15; }
+    }
+
+    .school-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .title {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin: 15px 0;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      opacity: 0.92;
+    }
+
+    .marks {
+      font-size: 1.55rem;
+      font-weight: bold;
+      margin-top: 20px;
+      color: var(--gold);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-left: 8px solid var(--accent);
+      padding-left: 16px;
+      margin: 45px 0 24px;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--primary);
+      margin: 32px 0 18px;
+      font-size: 1.38rem;
+      border-bottom: 3px solid #eee;
+      padding-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .question {
+      margin-bottom: 32px;
+    }
+
+    .qnum {
+      font-weight: bold;
+      color: var(--accent);
+      margin-right: 10px;
+    }
+
+    ol, ul {
+      margin-left: 32px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-left: 40px;
+      margin-top: 12px;
+    }
+
+    .option {
+      background: var(--light);
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      transition: all 0.25s ease;
+    }
+
+    .option:hover {
+      background: #e3f2fd;
+      border-color: #90caf9;
+      transform: translateX(4px);
+    }
+
+    .mcq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin: 24px 0;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 160px;
+      height: 30px;
+      border-bottom: 2.5px dashed var(--accent);
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    .truefalse {
+      display: flex;
+      gap: 40px;
+      margin-left: 45px;
+      margin-top: 12px;
+    }
+
+    .highlight {
+      background: linear-gradient(90deg, #fff8e1, #ffe082);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .match-set {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 20px 0;
+    }
+
+    .match-column {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin: 60px 0 40px;
+      color: #555;
+      font-style: italic;
+      font-size: 1.05rem;
+      border-top: 1px solid #eee;
+      padding-top: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .container { margin: 20px; }
+      .content { padding: 30px; }
+      .header { padding: 40px 25px; }
+      .school-name { font-size: 2.3rem; }
+      .title { font-size: 1.8rem; }
+      .mcq-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="school-name">St. Joseph Chaminade Academy (ICSE)</div>
+    <div class="title">Class: 7th Grade</div>
+    <div class="subtitle">Subject: HISTORY & CIVICS (SA-2) – SAMPLE QUESTION PAPER</div>
+    <div class="marks">Total Marks: 60 | Duration: 2½ Hours</div>
+  </div>
+
+  <div class="content">
+
+    <h2>PART 1 (20 Marks)</h2>
+    <p style="font-weight:500; margin-bottom:24px;">Attempt <span class="highlight">all</span> questions from this part</p>
+
+    <div class="question">
+      <h3>Question 1 – Multiple Choice Questions (10 × 1 = 10)</h3>
+      <div class="mcq-grid">
+
+        <div>1. The First Battle of Panipat was fought in<br>
+          <div class="options">
+            <div class="option">(a) Babur & Ibrahim Lodi</div>
+            <div class="option">(b) Babur & Rana Sanga</div>
+            <div class="option">(c) Humayun & Sher Shah</div>
+            <div class="option">(d) Akbar & Hemu</div>
+          </div>
+        </div>
+
+        <div>2. Sher Shah Suri is famous for introducing<br>
+          <div class="options">
+            <div class="option">(a) Mansabdari system</div>
+            <div class="option">(b) Grand Trunk Road</div>
+            <div class="option">(c) Din-i-Ilahi</div>
+            <div class="option">(d) Pilgrim Tax</div>
+          </div>
+        </div>
+
+        <div>3. The revenue system called <strong>Zabt</strong> was mainly developed by<br>
+          <div class="options">
+            <div class="option">(a) Sher Shah</div>
+            <div class="option">(b) Akbar</div>
+            <div class="option">(c) Aurangzeb</div>
+            <div class="option">(d) Jahangir</div>
+          </div>
+        </div>
+
+        <div>4. Akbar abolished the ________ tax in 1564 CE.<br>
+          <div class="options">
+            <div class="option">(a) Jaziya</div>
+            <div class="option">(b) Zakat</div>
+            <div class="option">(c) Pilgrim Tax</div>
+            <div class="option">(d) Kharaj</div>
+          </div>
+        </div>
+
+        <div>5. Shah Jahan earned the title of<br>
+          <div class="options">
+            <div class="option">(a) Alamgir</div>
+            <div class="option">(b) Shahenshah</div>
+            <div class="option">(c) Engineer King</div>
+            <div class="option">(d) Zinda Pir</div>
+          </div>
+        </div>
+
+        <div>6. The term 'Bhakti' primarily means<br>
+          <div class="options">
+            <div class="option">(a) Devotion</div>
+            <div class="option">(b) Knowledge</div>
+            <div class="option">(c) Ritual</div>
+            <div class="option">(d) Sacrifice</div>
+          </div>
+        </div>
+
+        <div>7. ________ was a well-known Sufi saint of the Chishti order in Delhi.<br>
+          <div class="options">
+            <div class="option">(a) Khwaja Muinuddin Chishti</div>
+            <div class="option">(b) Nizamuddin Auliya</div>
+            <div class="option">(c) Baba Farid</div>
+            <div class="option">(d) Salim Chishti</div>
+          </div>
+        </div>
+
+        <div>8. Guru Nanak was the founder of<br>
+          <div class="options">
+            <div class="option">(a) Bhakti movement</div>
+            <div class="option">(b) Sikhism</div>
+            <div class="option">(c) Sufism</div>
+            <div class="option">(d) Vaishnavism</div>
+          </div>
+        </div>
+
+        <div>9. The Vijayanagara ruler who authored <em>Amuktamalyada</em> was<br>
+          <div class="options">
+            <div class="option">(a) Harihara</div>
+            <div class="option">(b) Bukka</div>
+            <div class="option">(c) Krishnadeva Raya</div>
+            <div class="option">(d) Devaraya II</div>
+          </div>
+        </div>
+
+        <div>10. Humayun lost his empire to<br>
+          <div class="options">
+            <div class="option">(a) Sher Shah Suri</div>
+            <div class="option">(b) Rana Sanga</div>
+            <div class="option">(c) Ibrahim Lodi</div>
+            <div class="option">(d) Bahadur Shah</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 2 – Answer the following questions briefly (5 × 2 = 10)</h3>
+      <ol>
+        <li>Mention any four key events in Babur’s life before he invaded India.</li>
+        <li>Mention three important features of Akbar’s religious policy.</li>
+        <li>What was the major outcome of the Battle of Khanwa (1527)?</li>
+        <li>Who were the Bhakti saints? Name any two famous ones.</li>
+        <li>State any three Gandhian Principles included in the Directive Principles of State Policy.</li>
+      </ol>
+    </div>
+
+    <h2>PART II (40 Marks)</h2>
+
+    <h3>SECTION A (20 marks)<br>Attempt any TWO questions from this section</h3>
+
+    <div class="question">
+      <h3>Question 3 – Explain the following terms (Each carries 1 mark) (10 × 1 = 10)</h3>
+      <ol style="column-count:2; column-gap:50px; list-style-position: inside;">
+        <li>Backward Classes</li>
+        <li>Fundamental Rights</li>
+        <li>Silsila</li>
+        <li>Langar</li>
+        <li>Mansabdar</li>
+        <li>Minaret</li>
+        <li>Zabti system</li>
+        <li>Jizya</li>
+        <li>Ibadat Khana</li>
+        <li>Suba</li>
+      </ol>
+    </div>
+
+    <div class="question">
+      <h3>Question 4 – Match the Following (10 Marks)</h3>
+
+      <div class="match-set">
+        <div class="match-column">
+          <strong>Set A</strong><br><br>
+          1. Babur — __________<br>
+          2. Nur Jahan — __________<br>
+          3. Shah Jahan — __________<br>
+          4. Taj Mahal — __________<br>
+          5. Bernier — __________<br>
+          6. Aurangzeb — __________
+        </div>
+        <div class="match-column">
+          <strong>Options</strong><br><br>
+          (a) Peacock Throne<br>
+          (b) Baburnama<br>
+          (c) Mehrunnisa<br>
+          (d) Built in memory of Mumtaz Mahal<br>
+          (e) French traveller during Aurangzeb’s reign<br>
+          (f) Reimposed Jizya tax
+        </div>
+      </div>
+
+      <div class="match-set" style="margin-top:35px;">
+        <div class="match-column">
+          <strong>Set B</strong><br><br>
+          1. Sufi — __________<br>
+          2. Dohas — __________<br>
+          3. Ramananda — __________<br>
+          4. Tukaram — __________<br>
+          5. Meerabai — __________<br>
+          6. Kirtan — __________
+        </div>
+        <div class="match-column">
+          <strong>Options</strong><br><br>
+          (a) Devotee of Lord Vishnu<br>
+          (b) Couplets<br>
+          (c) Marathi saint who composed abhangs<br>
+          (d) Devotee of Krishna<br>
+          (e) Mystical union with God<br>
+          (f) Devotional singing
+        </div>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 5 – Picture Study + Fill in the Blanks (10 Marks)</h3>
+
+      <p><strong>Picture Study (5 Marks)</strong><br>(Imagine / refer to an image of the Taj Mahal or similar Mughal monument)</p>
+      <ol>
+        <li>Identify the monument shown in the picture.</li>
+        <li>Which Mughal emperor got it built?</li>
+        <li>Whom was it built in memory of?</li>
+      </ol>
+
+      <p style="margin-top:30px;"><strong>Fill in the Blanks (5 Marks)</strong></p>
+      <ol>
+        <li>The Sufi movement protested against the rigid rituals of the __________ .</li>
+        <li>The Nayanars were devotees of __________ and the Alvars praised Lord __________ .</li>
+        <li>Saint __________ translated the Bhagavad Gita into Marathi.</li>
+        <li>Saint __________ was a cobbler by profession. He opposed idol __________ and meaningless rituals.</li>
+        <li>The followers of Guru Nanak came to be known as __________ .</li>
+      </ol>
+    </div>
+
+    <h3>SECTION B (20 marks)<br>Attempt any TWO questions from this section</h3>
+
+    <div class="question">
+      <h3>Question 6 – Name the following (5 Marks) + True or False (5 Marks)</h3>
+
+      <p><strong>Name the following:</strong></p>
+      <ol>
+        <li>He was called 'Zinda Pir'. __________</li>
+        <li>Tax reimposed by Aurangzeb on non-Muslims __________</li>
+        <li>A famous Maratha leader who resisted Aurangzeb __________</li>
+        <li>The grand mosque built by Shah Jahan in Delhi __________</li>
+        <li>The title of Jahangir meaning 'World Seizer' __________</li>
+      </ol>
+
+      <p style="margin-top:28px;"><strong>True or False (Write T or F):</strong></p>
+      <div class="truefalse">
+        <ol style="margin-left:0;">
+          <li>The Vijayanagara empire was divided into provinces called mandalams. __________</li>
+          <li>Trade was a major source of revenue for Vijayanagara. __________</li>
+          <li>Vijayanagara had an advanced system of irrigation. __________</li>
+          <li>Vijayanagara traded extensively with Arabia and Portugal. __________</li>
+          <li>Cotton textiles and spices were major exports from Vijayanagara. __________</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 7 – One Word Answers (5 Marks) + Fill in the Blanks (5 Marks)</h3>
+
+      <p><strong>One word answers:</strong></p>
+      <ol>
+        <li>Spiritual chain of Sufi teachers __________</li>
+        <li>Repetition of God’s name __________</li>
+        <li>Spiritual guide in Sikhism __________</li>
+        <li>Devotional songs sung in praise of God __________</li>
+        <li>Holy scripture of the Sikhs _____________</li>
+      </ol>
+
+      <p style="margin-top:28px;"><strong>Fill in the Blanks:</strong></p>
+      <ol>
+        <li>The Bhakti movement protested against the rigid rituals of __________ and Islam.</li>
+        <li>The Nayanars were devotees of __________ and the Alvars praised Lord __________ .</li>
+        <li>Saint Eknath wrote a commentary on __________ in Marathi.</li>
+        <li>Saint __________ opposed the caste system and religious divisions.</li>
+        <li>Ramananda’s disciples included Kabir and __________ .</li>
+      </ol>
+    </div>
+
+    <div class="question">
+      <h3>Question 8 – Give Reasons (10 Marks)</h3>
+      <ol>
+        <li>Guru Nanak rejected idol worship and the caste system. (2)</li>
+        <li>Jahangir introduced the 'chain of justice' system. (2)</li>
+        <li>The Vijayanagara rulers constructed large temples and irrigation systems. (2)</li>
+        <li>The Directive Principles are described as the 'instrument of instructions'. (2)</li>
+        <li>Mention any four Economic Principles given in the Directive Principles of State Policy. (2)</li>
+      </ol>
+    </div>
+
+    <div class="footer-note">
+      Best of Luck for your SA-2 Examination! <br>
+      Prepare well and stay confident!
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
